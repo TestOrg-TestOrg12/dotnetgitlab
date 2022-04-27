@@ -2,7 +2,8 @@
 # https://docs.gitlab.com/ee/development/cicd/templates.html
 # This specific template is located at:
 # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/dotNET-Core.gitlab-ci.yml
-
+# Note: When updating this template, please consider updating the official CI .NET template at:
+# https://gitlab.com/gitlab-org/gitlab-foss/-/blob/master/lib/gitlab/ci/templates/dotNET-Core.gitlab-ci.yml
 # This is a simple example illustrating how to build and test .NET Core project
 # with GitLab Continuous Integration / Continuous Delivery.
 #
