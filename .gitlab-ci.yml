@@ -93,9 +93,10 @@ build:
   #
   # Note: this will fail if you have any projects in your solution that are not
   # .NET Core-based projects (e.g. WCF service), which is based on .NET Framework,
-  # not .NET Core. In this scenario, you will need to build every .NET Core-based
-  # project by explicitly specifying a relative path to the directory
-  # where it is located (e.g. 'dotnet build ./src/ConsoleApp').
+  # not .NET Core. In this scenario, you will need to use a separate solution
+  # file that only has .NET Core-based projects (`dotnet build MyApp.core.sln`),
+  # or build every .NET Core-based project by explicitly specifying a relative
+  # path to the directory where it is located (e.g. 'dotnet build ./src/ConsoleApp').
   # Only one project path can be passed as a parameter to 'dotnet build' command.
   script:
     - 'dotnet build --no-restore'
